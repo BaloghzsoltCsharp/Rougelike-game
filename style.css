@@ -1,0 +1,100 @@
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-width: 600px;
+    min-height: 500px;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.surrounding {
+    width: 28px;
+
+    height: 28px;
+}
+
+.dragon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.enemy {
+    width: 32px;
+    height: 32px;
+}
+
+.player {
+    width: 20px;
+    height: auto;
+
+
+}
+
+table {
+    border: none;
+}
+
+#display {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    border: 30px solid #333333;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/331/976/non_2x/stone-wall-from-bricks-rock-game-background-in-cartoon-style-seamless-textured-surface-ui-game-asset-road-or-floor-material-illustration-vector.jpg");
+    background-size: 700px 400px;
+    background-position: center;
+    overflow: hidden;
+}
+
+#screen {
+    color: #27b432;
+    margin: 10px;
+}
+
+#startBox {
+    position: absolute;
+    width: 100%;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    inset: 0;
+    text-align: center;
+}
+
+#endBox {
+    position: absolute;
+    width: 100%;
+    margin: 10px;
+    padding: 50px;
+    color: greenyellow;
+    inset: 0;
+    text-align: center;
+}
+
+#playerStats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: turquoise;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+#enemyStats {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: red;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+.is-hidden {
+    display: none;
+}
